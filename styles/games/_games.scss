@@ -1,0 +1,60 @@
+.games {
+  padding-bottom: 144px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__title {
+    @extend .about__title;
+    margin-bottom: 72px;
+  }
+
+  &__card-container {
+    padding: 48px 0 0 48px;
+    width: 50%;
+  }
+
+  &__btn {
+    @extend .header__btn
+  }
+
+  &__card {
+    display: flex;
+    background: $white;
+    border-radius: 30px;
+
+    &__title {
+      font-size: $fontSizeCardGames;
+      margin-bottom: 24px;
+    }
+
+    &__text {
+      font-size: $fontSizeSubtitle;
+      font-weight: $regular;
+      margin-bottom: 36px;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(2n) &__img {
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    &:nth-child(2n) &__card-container {
+      margin-right: auto;
+    }
+
+    &__img {
+      width: 50%;
+      height: 500px;
+      margin-left: auto;
+      object-fit: cover;
+    }
+  }
+}

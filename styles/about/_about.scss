@@ -1,5 +1,6 @@
 .about {
   padding: 94px 0 0;
+  margin-bottom: 96px;
 
   &__title {
     font-size: $fontSizeH1;
@@ -27,6 +28,8 @@
   &__item {
     grid-column: span 4;
     grid-row: span 68;
+    text-decoration: none;
+    color: $black;
 
     &_1, &_3 {
       grid-row: span 60;
