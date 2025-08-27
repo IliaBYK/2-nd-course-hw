@@ -1,0 +1,37 @@
+.card {
+  max-width: 378px;
+  height: fit-content;
+  background: $white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all .5s;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:hover &__img {
+    transform: scale(1.1);
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 314px;
+    transition: all .5s;
+  }
+
+  &__info {
+    padding: 32px 32px 36px;
+  }
+
+  /* &__span {
+
+  } */
+
+  &__title {
+    max-width: 314px;
+    font-size: $fontSizeCardTitle;
+  }
+}

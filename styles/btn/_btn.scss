@@ -1,0 +1,10 @@
+.btn {
+  cursor: pointer;
+  transition: all .5s;
+
+  &:hover {
+    border: 1px solid $black;
+    background: $white; // || none
+    color: $black;
+  }
+}

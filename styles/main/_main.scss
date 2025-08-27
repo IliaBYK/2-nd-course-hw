@@ -1,0 +1,10 @@
+.main {
+  background: $black;
+  position: relative;
+
+  &__star {
+    position: absolute;
+    top: 77px;
+    right: 0;
+  }
+}
