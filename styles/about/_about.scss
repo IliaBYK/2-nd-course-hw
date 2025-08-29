@@ -25,6 +25,11 @@
     gap: 0 32px;
   }
 
+  &__link {
+    text-decoration: none;
+    color: $black;
+  }
+
   &__item {
     grid-column: span 4;
     grid-row: span 68;
