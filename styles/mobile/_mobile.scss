@@ -66,6 +66,15 @@
 
   .games {
     padding: 49px 0 0;
+
+    &__container {
+      gap: 24px;
+    }
+
+    &__title {
+      font-size: $fontSizeMobTitle;
+      margin-bottom: 48px;
+    }
   }
 
   .card {
@@ -84,10 +93,12 @@
 
     &__title_games {
       font-size: $fontSizeCardTitle;
+      margin-bottom: 16px;
     }
 
     &__text {
       font-size: $fontSizeSubtitleMob;
+      margin-bottom: 32px;
     }
 
     &__img {
@@ -104,5 +115,9 @@
 
   .footer {
     height: 100px;
+
+    &__text {
+      font-size: $fontSizeSubtitleMob;
+    }
   }
 }
