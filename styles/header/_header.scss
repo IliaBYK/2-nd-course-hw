@@ -1,0 +1,73 @@
+.header {
+  height: 800px;
+  background: url('../../img/header-back.png') no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  &__info {
+    padding: 196px 0 0 120px;
+  }
+
+  &__title {
+    max-width: 769px;
+    font-size: $fontSizeH1;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    font-size: $fontSizeSubtitle;
+    max-width: 720px;
+    margin-bottom: 48px;
+  }
+
+  &__span {
+    font-weight: $semiBold;
+  }
+
+  &__btn {
+    width: 247px;
+    height: 66px;
+    border-radius: 60px;
+    border: none;
+    background: $black;
+    font-size: $fontSizeSubtitle;
+    font-weight: $semiBold;
+    color: $white;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__scroll {
+    max-width: 100%;
+    overflow: scroll;
+    margin-top: auto;
+  }
+
+  &__items {
+    width: 3220px;
+    padding: 27px 49px 30px;
+    background: $green;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    font-size: $fontSizeItem;
+    letter-spacing: 1.13px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+  }
+
+  &__img {
+    margin: 0 51px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

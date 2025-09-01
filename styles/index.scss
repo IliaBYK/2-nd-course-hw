@@ -1,0 +1,34 @@
+/*variables*/
+@import './variables/variables';
+
+/*center*/
+@import './center/center';
+
+/*btn*/
+@import './btn/btn';
+
+/*header*/
+@import './header/header';
+
+/*main*/
+@import './main/main';
+
+/*about*/
+@import './about/about';
+
+/*card*/
+@import './card/card';
+
+/*games*/
+@import './games/games';
+
+/*footer*/
+@import './footer/footer';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}

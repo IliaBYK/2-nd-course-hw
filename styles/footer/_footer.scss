@@ -1,0 +1,13 @@
+.footer {
+  height: 150px;
+  background: $greenFooter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    color: $black;
+    font-size: $fontSizeItem;
+    font-weight: $semiBold;
+  }
+}

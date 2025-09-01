@@ -1,0 +1,118 @@
+.card {
+  max-width: 378px;
+  height: fit-content;
+  background: $white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all .5s;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:hover &__img {
+    transform: scale(1.1);
+  }
+
+  &__text {
+    font-size: $fontSizeSubtitle;
+    font-weight: $regular;
+    margin-bottom: 36px;
+  }
+
+  &__card-container {
+    padding: 48px 0 0 48px;
+    width: 50%;
+  }
+
+  &__btn {
+    @extend .header__btn
+  }
+
+  &_games {
+    display: flex;
+    background: $white;
+    border-radius: 30px;
+    max-width: none;
+    cursor: auto;
+
+    &:hover {
+      transform: none;
+    }
+
+    &:hover .card__img {
+      transform: none;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(2n) &__img_games {
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    &:nth-child(2n) .card-container_games {
+      margin-right: auto;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 314px;
+    transition: all .5s;
+    display: block;
+
+    &_games {
+      width: 50%;
+      height: 500px;
+      margin-left: auto;
+      object-fit: cover;
+      max-height: none;
+    }
+  }
+
+  &__info {
+    padding: 32px 32px 36px;
+  }
+
+  &__span {
+    display: block;
+    width: 108px;
+    height: 36px;
+    border-radius: 53px;
+    background: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    max-width: 314px;
+    font-size: $fontSizeCardTitle;
+
+    &_games {
+      font-size: $fontSizeCardGames;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    font-size: $fontSizeSubtitle;
+    font-weight: $regular;
+    margin-bottom: 36px;
+  }
+
+  &-container {
+    padding: 48px 0 0 48px;
+    width: 50%;
+  }
+
+  &__btn {
+    @extend .header__btn
+  }
+}

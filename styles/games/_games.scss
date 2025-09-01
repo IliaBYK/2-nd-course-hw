@@ -1,0 +1,14 @@
+.games {
+  padding-bottom: 144px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__title {
+    @extend .about__title;
+    margin-bottom: 72px;
+  }
+}
