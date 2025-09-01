@@ -61,6 +61,9 @@
   align-items: center;
   justify-content: center;
 }
+.header__btn_mobile {
+  display: none;
+}
 .header__scroll {
   max-width: 100%;
   overflow: scroll;
@@ -279,6 +282,22 @@
     background-size: cover;
   }
 }
+@media (max-width: 1240px) {
+  .container {
+    padding: 0 16px 10px;
+  }
+}
+@media (max-width: 888px) {
+  .header__btn, .card__btn {
+    display: none;
+  }
+  .header__btn_mobile {
+    display: flex;
+  }
+  .about {
+    display: none;
+  }
+}
 @media (max-width: 786px) {
   .br_mobile {
     display: inline;
@@ -318,11 +337,10 @@
     width: 19px;
     height: 19px;
   }
-  .container {
-    padding: 0 16px 10px;
-  }
-  .about {
-    display: none;
+  .header__btn, .card__btn {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
   }
   .games {
     padding: 49px 0 0;
@@ -360,6 +378,7 @@
   .card__btn {
     width: 285px;
     height: 55px;
+    font-size: 16px;
   }
   .footer {
     height: 100px;

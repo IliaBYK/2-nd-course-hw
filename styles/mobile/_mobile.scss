@@ -5,6 +5,28 @@
   }
 }
 
+@media (max-width: 1240px) {
+  .container {
+    padding: 0 16px 10px;
+  }
+}
+
+@media (max-width: 888px) {
+  .header {
+    &__btn {
+      display: none;
+
+      &_mobile {
+        display: flex;
+      }
+    }
+  }
+
+  .about {
+    display: none;
+  }
+}
+
 @media (max-width: 786px) {
   //для форматирования текста на разных устройствах
   .br {
@@ -54,14 +76,12 @@
       width: 19px;
       height: 19px;
     }
-  }
 
-  .container {
-    padding: 0 16px 10px;
-  }
-
-  .about {
-    display: none;
+    &__btn {
+      width: 285px;
+      height: 55px;
+      font-size: $fontSizeSubtitleMob;
+    }
   }
 
   .games {
@@ -110,6 +130,7 @@
     &__btn {
       width: 285px;
       height: 55px;
+      font-size: $fontSizeSubtitleMob;
     }
   }
 
