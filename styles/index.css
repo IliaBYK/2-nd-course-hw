@@ -1,6 +1,11 @@
 /*variables*/
+/*br*/
+.bd_mobile {
+  display: none;
+}
+
 /*center*/
-.center {
+.center, .container {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -152,6 +157,7 @@
   cursor: pointer;
   transition: all 0.5s;
   overflow: hidden;
+  z-index: 1;
 }
 .card:hover {
   transform: scale(1.05);
@@ -265,6 +271,7 @@
   font-weight: 500;
 }
 
+/*container*/
 /*mobile*/
 @media (max-width: 1440px) {
   .header {
@@ -273,6 +280,12 @@
   }
 }
 @media (max-width: 786px) {
+  .br_mobile {
+    display: inline;
+  }
+  .br_desktop {
+    display: none;
+  }
   .header {
     height: 700px;
   }
@@ -304,6 +317,43 @@
     margin: 0 27px;
     width: 19px;
     height: 19px;
+  }
+  .container {
+    padding: 0 16px 10px;
+  }
+  .about {
+    display: none;
+  }
+  .games {
+    padding: 49px 0 0;
+  }
+  .card {
+    flex-direction: column-reverse;
+  }
+  .card_games:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+  .card-container {
+    width: 100%;
+    padding: 29px 29px 33px;
+  }
+  .card__title_games {
+    font-size: 32px;
+  }
+  .card__text {
+    font-size: 16px;
+  }
+  .card__img {
+    width: 100%;
+    height: 285px;
+    border-radius: 30px;
+  }
+  .card__btn {
+    width: 285px;
+    height: 55px;
+  }
+  .footer {
+    height: 100px;
   }
 }
 * {
