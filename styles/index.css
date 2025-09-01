@@ -288,7 +288,7 @@
   }
 }
 @media (max-width: 888px) {
-  .header__btn, .card__btn {
+  .header__btn_desktop {
     display: none;
   }
   .header__btn_mobile {
@@ -297,7 +297,23 @@
   .about {
     display: none;
   }
+  .btn:hover {
+    border: none;
+    background: #202027;
+    color: white;
+    box-shadow: none;
+  }
 }
+/* @media (hover: none) {
+  .btn {
+    &:hover {
+    border: none;
+    background: $black;
+    color: $white;
+    box-shadow: none;
+    }
+  }
+} */
 @media (max-width: 786px) {
   .br_mobile {
     display: inline;

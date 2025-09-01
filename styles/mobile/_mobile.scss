@@ -14,7 +14,9 @@
 @media (max-width: 888px) {
   .header {
     &__btn {
-      display: none;
+      &_desktop {
+        display: none;
+      }
 
       &_mobile {
         display: flex;
@@ -25,7 +27,27 @@
   .about {
     display: none;
   }
+
+  .btn {
+    &:hover {
+    border: none;
+    background: $black;
+    color: $white;
+    box-shadow: none;
+    }
+  }
 }
+
+/* @media (hover: none) {
+  .btn {
+    &:hover {
+    border: none;
+    background: $black;
+    color: $white;
+    box-shadow: none;
+    }
+  }
+} */
 
 @media (max-width: 786px) {
   //для форматирования текста на разных устройствах
