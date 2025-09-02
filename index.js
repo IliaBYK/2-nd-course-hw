@@ -52,11 +52,11 @@ const user = {
 }
 
 //10
-const nameUser = promt('Как вас зовут?')
+const nameUser = prompt('Как вас зовут?')
 alert(`Привет, ${nameUser}`)
 
 //Дополнительное
-const number = promt('Загадайте любое число')
+const number = Number(prompt('Загадайте любое число'));
 
 const numberOne = number * 2;
 alert(`Удвоенное загаданное число: ${numberOne}`);

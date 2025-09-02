@@ -1,13 +1,7 @@
 /*variables*/
 /*br*/
-.bd_mobile {
+.br_mobile {
   display: none;
-}
-
-/*center*/
-.center, .container {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
 }
 
 /*btn*/
@@ -231,7 +225,6 @@
   margin-bottom: 16px;
 }
 .card__title {
-  max-width: 314px;
   font-size: 32px;
 }
 .card__title_games {
@@ -274,9 +267,15 @@
   font-weight: 500;
 }
 
+/*center*/
+.center, .container {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 /*container*/
 /*mobile*/
-@media (max-width: 1440px) {
+@media (max-width: 1340px) {
   .header {
     background: url("../../img/mobileBack.png") no-repeat;
     background-size: cover;
@@ -285,6 +284,9 @@
 @media (max-width: 1240px) {
   .container {
     padding: 0 16px 10px;
+  }
+  .header__info {
+    padding-left: 16px;
   }
 }
 @media (max-width: 888px) {
@@ -304,16 +306,6 @@
     box-shadow: none;
   }
 }
-/* @media (hover: none) {
-  .btn {
-    &:hover {
-    border: none;
-    background: $black;
-    color: $white;
-    box-shadow: none;
-    }
-  }
-} */
 @media (max-width: 786px) {
   .br_mobile {
     display: inline;
@@ -377,6 +369,9 @@
   .card-container {
     width: 100%;
     padding: 29px 29px 33px;
+  }
+  .card__title {
+    width: 280px;
   }
   .card__title_games {
     font-size: 32px;
