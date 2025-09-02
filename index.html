@@ -12,9 +12,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__info">
+      <div class="header__info center">
         <h1 class="header__title">
-          Добро пожаловать <br>на мой сайт мини-игр
+          Добро пожаловать <br class="br br_desktop">на мой сайт мини-игр
         </h1>
     
         <p class="header__subtitle">
@@ -22,7 +22,9 @@
           Если готов, нажимай <span class="header__span">«Поехали!»</span> и <span class="header__span">приступай.</span>
         </p>
     
-        <a class="header__btn btn" href="#about">Поехали!</a>
+        <a class="header__btn header__btn_desktop btn" href="#about">Поехали!</a>
+        <!--если нет блока "Об играх"-->
+        <a class="header__btn header__btn_mobile btn" href="#games">Поехали!</a>
       </div>
 
       <div class="header__scroll">
@@ -46,198 +48,218 @@
     <main class="main center">
       <img class="main__star" src="/img/star-bg-main.svg" alt="Звезда на обложке главной страницы.">
 
-      <section class="about" id="about">
-        <h2 class="about__title">Об играх</h2>
+      <div class="container">
+        <section class="about" id="about">
+          <h2 class="about__title">Об играх</h2>
 
-        <p class="about__text">
-          В моей коллекции представлено 6 игр на разные темы.
-          <br>Игры несложные — в них может поиграть каждый.
-          <br>Все игры доступны для пользования.
-        </p>
+          <p class="about__text">
+            В моей коллекции представлено 6 игр на разные темы.
+            <br class="br br_desktop">Игры несложные — в них может поиграть каждый.
+            <br class="br br_desktop">Все игры доступны для пользования.
+          </p>
 
-        <div class="about__content">
-          <article class="card about__item about__item_1">
-            <a class="about__link" href="#1">
-              <img src="/img/card1.png" alt="Карточка игры Угадай число" class="card__img">
-    
-              <div class="card__info">
-                <span class="card__span"> Игра № 1</span>
-                <h3 class="card__title">Угадай число</h3>
+          <div class="about__content">
+            <article class="card about__item about__item_1">
+              <a class="about__link" href="#1">
+                <img src="/img/card1.png" alt="Карточка игры Угадай число" class="card__img">
+      
+                <div class="card__info">
+                  <span class="card__span"> Игра № 1</span>
+                  <h3 class="card__title">Угадай число</h3>
+                </div>
+              </a>
+            </article>
+
+            <article class="card about__item about__item_2">
+              <a class="about__link" href="#2">
+                <img src="/img/card2.png" alt="Карточка игры Простая арифметика" class="card__img">
+      
+                <div class="card__info">
+                  <span class="card__span">Игра № 2</span>
+                  <h3 class="card__title">Простая арифметика</h3>
+                </div>
+              </a>
+            </article>
+
+            <article class="card about__item about__item_3">
+              <a class="about__link" href="#3">
+                <img src="/img/card3.png" alt="Карточка игры Переверни текст" class="card__img">
+      
+                <div class="card__info">
+                  <span class="card__span">Игра № 3</span>
+                  <h3 class="card__title">Переверни текст</h3>
+                </div>
+              </a>
+            </article>
+
+            <article class="card about__item about__item_4">
+              <a class="about__link" href="#4">
+                <img src="/img/card4.png" alt="Карточка игры Камень, ножницы, бумага" class="card__img">
+      
+                <div class="card__info">
+                  <span class="card__span">Игра № 4</span>
+                  <h3 class="card__title">Камень,<br class="br br_desktop">ножницы, <br class="br br_desktop">бумага</h3>
+                </div>
+              </a>
+            </article>
+
+            <article class="card about__item about__item_5">
+              <a class="about__link" href="#5">
+                <img src="/img/card5.png" alt="Карточка игры Простая викторина" class="card__img">
+      
+                <div class="card__info">
+                  <span class="card__span">Игра № 5</span>
+                  <h3 class="card__title">Простая викторина</h3>
+                </div>
+              </a>
+            </article>
+
+            <article class="card about__item about__item_6">
+              <a class="about__link" href="#6">
+                <img src="/img/card6.png" alt="Карточка игры Генератор случайных цветов" class="card__img">
+      
+                <div class="card__info">
+                  <span class="card__span">Игра № 6</span>
+                  <h3 class="card__title">Генератор случайных цветов</h3>
+                </div>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section class="games" id="games">
+          <h2 class="games__title">Мини-игры</h2>
+
+          <div class="games__container">
+            <article class="card card_games" id="1">
+              <div class="card-container">
+                <h3 class="card__title card__title_games">Угадай число</h3>
+      
+                <p class="card__text">
+                  Попробуй угадать случайное <br class="br br_desktop">число от 1 до 100.
+                </p>
+
+                <button class="card__btn btn">Играть!</button>
               </div>
-            </a>
-          </article>
+      
+              <img 
+                src="/img/card-games1.png" 
+                alt="Карточка игры Угадай число" 
+                class="card__img card__img_games"
+              >
+            </article>
+      
+            <article class="card card_games" id="2">
+              <div class="card-container">
+                <h3 class="card__title card__title_games">Простая арифметика</h3>
+      
+                <p class="card__text">
+                  Попробуй решить простые <br class="br br_desktop">арифметические задачи.
+                </p>
 
-          <article class="card about__item about__item_2">
-            <a class="about__link" href="#2">
-              <img src="/img/card2.png" alt="Карточка игры Простая арифметика" class="card__img">
-    
-              <div class="card__info">
-                <span class="card__span">Игра № 2</span>
-                <h3 class="card__title">Простая арифметика</h3>
+                <button class="card__btn btn">Играть!</button>
               </div>
-            </a>
-          </article>
+      
+              <img 
+                src="/img/card-games2.png" 
+                alt="Карточка игры Угадай число" 
+                class="card__img card__img_games"
+              >
+            </article>
+            <article class="card card_games" id="3">
+              <div class="card-container">
+                <h3 class="card__title card__title_games">Переверни текст</h3>
+      
+                <p class="card__text">
+                  Попробуй ввести текст, который <br class="br br_desktop">будет перевернут.
+                </p>
 
-          <article class="card about__item about__item_3">
-            <a class="about__link" href="#3">
-              <img src="/img/card3.png" alt="Карточка игры Переверни текст" class="card__img">
-    
-              <div class="card__info">
-                <span class="card__span">Игра № 3</span>
-                <h3 class="card__title">Переверни текст</h3>
+                <button class="card__btn btn">Играть!</button>
               </div>
-            </a>
-          </article>
+      
+              <img 
+                src="/img/card-games3.png" 
+                alt="Карточка игры Угадай число" 
+                class="card__img card__img_games"
+              >
+            </article>
+            <article class="card card_games" id="4">
+              <div class="card-container">
+                <h3 class="card__title card__title_games">
+                  Камень, 
+                  <br class="br br_desktop">
+                  ножницы, 
+                  <br class="br br_desktop">
+                  бумага
+                </h3>
+      
+                <p class="card__text">
+                  Сыграй в популярную игру <br class="br br_desktop">против компьютера.
+                </p>
 
-          <article class="card about__item about__item_4">
-            <a class="about__link" href="#4">
-              <img src="/img/card4.png" alt="Карточка игры Камень, ножницы, бумага" class="card__img">
-    
-              <div class="card__info">
-                <span class="card__span">Игра № 4</span>
-                <h3 class="card__title">Камень, ножницы, <br>бумага</h3>
+                <button class="card__btn btn">Играть!</button>
               </div>
-            </a>
-          </article>
+      
+              <img 
+                src="/img/card-games4.png" 
+                alt="Карточка игры Угадай число" 
+                class="card__img card__img_games"
+              >
+            </article>
+            <article class="card card_games" id="5">
+              <div class="card-container">
+                <h3 class="card__title card__title_games">Простая <br class="br br_desktop">викторина</h3>
+      
+                <p class="card__text">
+                  Отвечай на вопросы викторины 
+                  <br class="br">
+                  с вариантами ответов.
+                </p>
 
-          <article class="card about__item about__item_5">
-            <a class="about__link" href="#5">
-              <img src="/img/card5.png" alt="Карточка игры Простая викторина" class="card__img">
-    
-              <div class="card__info">
-                <span class="card__span">Игра № 5</span>
-                <h3 class="card__title">Простая викторина</h3>
+                <button class="card__btn btn">Играть!</button>
               </div>
-            </a>
-          </article>
+      
+              <img 
+                src="/img/card-games5.png" 
+                alt="Карточка игры Угадай число" 
+                class="card__img card__img_games"
+              >
+            </article>
+            <article class="card card_games" id="6">
+              <div class="card-container">
+                <h3 class="card__title card__title_games">
+                  Генератор 
+                  <br class="br br_desktop">
+                  случайных 
+                  <br class="br br_desktop">
+                  цветов
+                </h3>
+      
+                <p class="card__text">
+                  Игра, в которой при клике 
+                  <br class="br br_mobile">на кнопку 
+                  <br class="br br_desktop">фон страницы 
+                  <br class="br br_mobile">меняется на случайный.
+                </p>
 
-          <article class="card about__item about__item_6">
-            <a class="about__link" href="#6">
-              <img src="/img/card6.png" alt="Карточка игры Генератор случайных цветов" class="card__img">
-    
-              <div class="card__info">
-                <span class="card__span">Игра № 6</span>
-                <h3 class="card__title">Генератор случайных цветов</h3>
+                <button class="card__btn btn">Играть!</button>
               </div>
-            </a>
-          </article>
-        </div>
-      </section>
-
-      <section class="games">
-        <h2 class="games__title">Мини-игры</h2>
-
-        <div class="games__container">
-          <article class="card card_games" id="1">
-            <div class="card-container">
-              <h3 class="card__title card__title_games">Угадай число</h3>
-    
-              <p class="card__text">
-                Попробуй угадать случайное <br>число от 1 до 100.
-              </p>
-
-              <button class="card__btn btn">Играть!</button>
-            </div>
-    
-            <img 
-              src="/img/card-games1.png" 
-              alt="Карточка игры Угадай число" 
-              class="card__img card__img_games"
-            >
-          </article>
-    
-          <article class="card card_games" id="2">
-            <div class="card-container">
-              <h3 class="card__title card__title_games">Простая арифметика</h3>
-    
-              <p class="card__text">
-                Попробуй решить простые <br>арифметические задачи.
-              </p>
-
-              <button class="card__btn btn">Играть!</button>
-            </div>
-    
-            <img 
-              src="/img/card-games2.png" 
-              alt="Карточка игры Угадай число" 
-              class="card__img card__img_games"
-            >
-          </article>
-          <article class="card card_games" id="3">
-            <div class="card-container">
-              <h3 class="card__title card__title_games">Переверни текст</h3>
-    
-              <p class="card__text">
-                Попробуй ввести текст, который <br>будет перевернут.
-              </p>
-
-              <button class="card__btn btn">Играть!</button>
-            </div>
-    
-            <img 
-              src="/img/card-games3.png" 
-              alt="Карточка игры Угадай число" 
-              class="card__img card__img_games"
-            >
-          </article>
-          <article class="card card_games" id="4">
-            <div class="card-container">
-              <h3 class="card__title card__title_games">Камень, ножницы, бумага</h3>
-    
-              <p class="card__text">
-                Сыграй в популярную игру <br>против компьютера.
-              </p>
-
-              <button class="card__btn btn">Играть!</button>
-            </div>
-    
-            <img 
-              src="/img/card-games4.png" 
-              alt="Карточка игры Угадай число" 
-              class="card__img card__img_games"
-            >
-          </article>
-          <article class="card card_games" id="5">
-            <div class="card-container">
-              <h3 class="card__title card__title_games">Простая викторина</h3>
-    
-              <p class="card__text">
-                Отвечай на вопросы викторины <br>с вариантами ответов.
-              </p>
-
-              <button class="card__btn btn">Играть!</button>
-            </div>
-    
-            <img 
-              src="/img/card-games5.png" 
-              alt="Карточка игры Угадай число" 
-              class="card__img card__img_games"
-            >
-          </article>
-          <article class="card card_games" id="6">
-            <div class="card-container">
-              <h3 class="card__title card__title_games">Генератор случайных цветов</h3>
-    
-              <p class="card__text">
-                Игра, в которой при клике на кнопку <br>фон страницы меняется на случайный.
-              </p>
-
-              <button class="card__btn btn">Играть!</button>
-            </div>
-    
-            <img 
-              src="/img/card-games6.png" 
-              alt="Карточка игры Угадай число" 
-              class="card__img card__img_games"
-            >
-          </article>
-        </div>
-
-      </section>
+      
+              <img 
+                src="/img/card-games6.png" 
+                alt="Карточка игры Угадай число" 
+                class="card__img card__img_games"
+              >
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer center">
       <p class="footer__text">Все права защищены.</p>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

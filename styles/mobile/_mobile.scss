@@ -1,0 +1,165 @@
+@media (max-width: 1340px) {
+  .header {
+    background: url('../../img/mobileBack.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1240px) {
+  .container {
+    padding: 0 16px 10px;
+  }
+
+  .header {
+    &__info {
+      padding-left: 16px;
+    }
+  }
+}
+
+@media (max-width: 888px) {
+  .header {
+    &__btn {
+      &_desktop {
+        display: none;
+      }
+
+      &_mobile {
+        display: flex;
+      }
+    }
+  }
+
+  .about {
+    display: none;
+  }
+
+  .btn {
+    &:hover {
+    border: none;
+    background: $black;
+    color: $white;
+    box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  //для форматирования текста на разных устройствах
+  .br {
+    &_mobile {
+      display: inline;
+    }
+
+    &_desktop {
+      display: none;
+    }
+  }
+
+  .header {
+    height: 700px;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 147px 0 0;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: $fontSizeMobTitle;
+      max-width: 262px;
+      margin: 0 auto 24px;
+    }
+
+    &__subtitle {
+      max-width: 296px;
+      font-size: $fontSizeSubtitleMob;
+      text-align: center;
+    }
+
+    &__items {
+      padding: 16px;
+      width: 1745px;
+    }
+
+    &__item {
+      font-size: $fontSizeSubtitleMob;
+    }
+
+    &__img {
+      margin: 0 27px;
+      width: 19px;
+      height: 19px;
+    }
+
+    &__btn {
+      width: 285px;
+      height: 55px;
+      font-size: $fontSizeSubtitleMob;
+    }
+  }
+
+  .games {
+    padding: 49px 0 0;
+
+    &__container {
+      gap: 24px;
+    }
+
+    &__title {
+      font-size: $fontSizeMobTitle;
+      margin-bottom: 48px;
+    }
+  }
+
+  .card {
+    flex-direction: column-reverse;
+
+    &_games {
+      &:nth-child(2n) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &-container {
+      width: 100%;
+      padding: 29px 29px 33px;
+    }
+
+    &__title {
+      width: 280px;
+    }
+
+    &__title_games {
+      font-size: $fontSizeCardTitle;
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      font-size: $fontSizeSubtitleMob;
+      margin-bottom: 32px;
+    }
+
+    &__img {
+      width: 100%;
+      height: 285px;
+      border-radius: 30px;
+    }
+
+    &__btn {
+      width: 285px;
+      height: 55px;
+      font-size: $fontSizeSubtitleMob;
+    }
+  }
+
+  .footer {
+    height: 100px;
+
+    &__text {
+      font-size: $fontSizeSubtitleMob;
+    }
+  }
+}

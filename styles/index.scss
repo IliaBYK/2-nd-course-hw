@@ -1,8 +1,8 @@
 /*variables*/
 @import './variables/variables';
 
-/*center*/
-@import './center/center';
+/*br*/
+@import './br/br';
 
 /*btn*/
 @import './btn/btn';
@@ -24,6 +24,15 @@
 
 /*footer*/
 @import './footer/footer';
+
+/*center*/
+@import './center/center';
+
+/*container*/
+@import './container/container';
+
+/*mobile*/
+@import './mobile/mobile';
 
 * {
   padding: 0;
