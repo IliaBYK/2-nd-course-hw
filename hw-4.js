@@ -95,9 +95,9 @@ for (const key in book) {
 const arr = [80, 1, 64, 71, 46, 54, 68, 89, 18, 94];
 let number = arr[0];
 
-for (let i = 0; i < arr.length; i++) {
-  if(number > arr[i + 1]) {
-    number = arr[i + 1]
+for (let i = 1; i < arr.length; i++) {
+  if(number > arr[i]) {
+    number = arr[i]
   }
 }
 
