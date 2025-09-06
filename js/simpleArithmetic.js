@@ -6,7 +6,7 @@ const simpleArithmetic = () => {
   const randomOne = Math.floor(Math.floor(Math.random() * 10) + 1);
   let randomTwo = Math.floor(Math.floor(Math.random() * 10) + 1);
 
-  if (randomTwo > randomOne) {
+  while (randomTwo >= randomOne) {
     randomTwo = Math.floor(Math.random() * 10) + 1;
   }
   let userGuess;
@@ -29,7 +29,7 @@ const simpleArithmetic = () => {
   alert('Добро пожаловать в игру Простая арифметика!');
   alert(`Вам будут представлены арифметические задачи, 
   попробуйте решить их и написать ответ в поле ввода;
-  результат можно округлить в меньшую сторону`);
+  результат можно округлить в меньшую сторону до целого числа`);
   alert([randomOne, randomOperation, randomTwo].join(''))
     
   do {
@@ -40,7 +40,7 @@ const simpleArithmetic = () => {
       break;
     }
 
-    if (userGuess !== Math.floor(calculate(randomOperation, randomOne, randomTwo)) || userGuess === 0) {
+    if (userGuess !== Math.floor(calculate(randomOperation, randomOne, randomTwo))) {
       alert(`К сожалению, вы ошиблись, попробуйте еще раз
       Вот задача:  ${[randomOne, randomOperation, randomTwo].join('')}`);
       continue;
