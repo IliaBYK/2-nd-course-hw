@@ -38,7 +38,7 @@ getRandomNumber();
 
 //6
 function generateRandomArray(n) {
-  const arrayLength = n / 2;
+  const arrayLength = Math.floor(n / 2);
   const result = [];
   
   for (let i = 0; i < arrayLength; i++) {
@@ -51,13 +51,13 @@ function generateRandomArray(n) {
 
 console.log(generateRandomArray(6));
 console.log(generateRandomArray(10));
+console.log(generateRandomArray(7));
 
 //7
 function getRandomNumberInRange(min, max) {
   if (min > max) {
-    min = max;
-    max = min;
-  }
+    return 'Минимальное значение должно быть меньше или равно максимальному';
+  } 
   
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -65,6 +65,8 @@ function getRandomNumberInRange(min, max) {
 console.log(getRandomNumberInRange(1, 7));
 console.log(getRandomNumberInRange(3, 10));
 console.log(getRandomNumberInRange(-5, 5));
+console.log(getRandomNumberInRange(5, -5));
+
 
 //8
   //1
@@ -121,7 +123,7 @@ function formatDate(date) {
   const day = date.getDate();
   const month = months[date.getMonth()];
   const year = date.getFullYear();
-  const dayOfWeek = daysOfWeek[date.getDay()];
+  const dayOfWeek = daysOfWeek[date.getDay() - 1];
   
   const hours = String(date.getHours()).padStart(2, '0');
   const minutes = String(date.getMinutes()).padStart(2, '0');

@@ -37,22 +37,13 @@ const quiz = () => {
       break;
     }
 
-    do {
       if (userGuess !== quizQuestions[i].correctAnswer.toString()) {
-        alert(`Увы, неверно, попробуйте еще раз`);
-        userGuess = prompt(`${quizQuestions[i].question}
-          варианты ответов:
-          ${quizQuestions[i].options.join(', ')}
-        `);
-
-        continue;
+        alert(`Увы, неверно, ${i < quizQuestions.length - 1 ? ('следующий вопрос') : 'Вы ответили на все вопросы'}`);
       } else {
-        alert(`Верно!!! Следующий вопрос`);
+        alert(`Верно! ${i < quizQuestions.length - 1 ? ('Cледующий вопрос') : 'Вы ответили на все вопросы'}`)
         score++;
         continue;
       }
-      
-    } while (userGuess !== quizQuestions[i].correctAnswer.toString());
   }
 
   alert(`Поздравляем! Вы набрали ${score} ${score === 0 && 'очков' || score === 1 && 'очко' || score > 1  && 'очка'}`);
