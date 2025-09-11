@@ -35,7 +35,7 @@ const simpleArithmetic = () => {
   do {
     userGuess = parseInt(prompt('Введите ваш ответ: '), 10);
 
-    if(!userGuess && userGuess !== 0) {
+    if(userGuess === null) {
       alert('Вы завершили игру');
       break;
     }
