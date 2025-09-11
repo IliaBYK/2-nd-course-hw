@@ -46,7 +46,7 @@ const quiz = () => {
       }
   }
 
-  alert(`Поздравляем! Вы набрали ${score} ${score === 0 && 'очков' || score === 1 && 'очко' || score > 1  && 'очка'}`);
+  alert(`${score === 0 ? 'К сожалению' : 'Поздравляем!'} Вы набрали ${score} ${score === 0 && 'очков' || score === 1 && 'очко' || score > 1  && 'очка'}`);
 }
 
 buttonQuiz.addEventListener('click', quiz)
