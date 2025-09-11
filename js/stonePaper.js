@@ -18,7 +18,7 @@ const stonePaper = () => {
     userInput = prompt("Выберите: камень, ножницы или бумага (отмена для выхода)");
 
     if (userInput !== null && userInput !== undefined) {
-      userInput.toLowerCase();
+      userInput = userInput.toLowerCase();
     }
 
     if (userInput === null) {
