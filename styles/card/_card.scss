@@ -19,7 +19,8 @@
   &__text {
     font-size: $fontSizeSubtitle;
     font-weight: $regular;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
+    line-height: 33px;
   }
 
   &__card-container {
@@ -99,12 +100,6 @@
       font-size: $fontSizeCardGames;
       margin-bottom: 24px;
     }
-  }
-
-  &__text {
-    font-size: $fontSizeSubtitle;
-    font-weight: $regular;
-    margin-bottom: 36px;
   }
 
   &-container {

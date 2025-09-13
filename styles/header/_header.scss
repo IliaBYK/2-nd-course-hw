@@ -18,7 +18,8 @@
   &__subtitle {
     font-size: $fontSizeSubtitle;
     max-width: 720px;
-    margin-bottom: 48px;
+    margin-bottom: 46px;
+    line-height: 33px;
   }
 
   &__span {
@@ -53,7 +54,7 @@
 
   &__items {
     width: 3220px;
-    padding: 27px 49px 30px;
+    padding: 27px 20px 27px;
     background: $green;
     display: flex;
     align-items: center;
