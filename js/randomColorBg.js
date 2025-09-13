@@ -1,6 +1,7 @@
 const buttonChangeColor = document.getElementById('changeColor');
 const main = document.getElementById('main');
 let isClicked = true;
+let color = '#';
 
 //функция для показа окна один раз
 const changeClick = () => {
@@ -11,7 +12,15 @@ const changeClick = () => {
 const changeColor = () => {
   isClicked && changeClick();
 
-  main.style.backgroundColor = '#fff'
+  for (let i = 0; i < 6; i++) {
+    const num = Math.floor(Math.random() * 9)
+
+    color += num.toString();
+  }
+
+  main.style.backgroundColor = color;
+
+  color = '#';
 }
 
 buttonChangeColor.addEventListener('click', changeColor)
