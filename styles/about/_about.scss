@@ -1,6 +1,16 @@
 .about {
-  padding: 94px 0 0;
-  margin-bottom: 96px;
+  padding: 94px 0 33px;
+  margin-bottom: 48px;
+  position: relative;
+
+  &__line {
+    position: absolute;
+    height: 1px;
+    left: -120px;
+    bottom: 0;
+    width: 1440px;
+    background: $blackDark;
+  }
 
   &__title {
     font-size: $fontSizeH1;
@@ -13,7 +23,8 @@
     color: $white;
     font-size: $fontSizeSubtitle;
     font-weight: $regular;
-    margin-bottom: 72px;
+    margin-bottom: 69px;
+    line-height: 33px;
   }
 
 //пока не нашел вариант, как расположить карточки согласно макету
@@ -22,7 +33,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(136, 1fr);
-    gap: 0 32px;
+    gap: 0 29px;
   }
 
   &__link {
@@ -41,12 +52,12 @@
     }
 
     &_4, &_6 {
-      grid-row-start: 66;
+      grid-row-start: 65;
       grid-row-end: -1;
     }
 
     &_5 {
-      grid-row-start: 71;
+      grid-row-start: 70;
       grid-row-end: -1;
     }
 
